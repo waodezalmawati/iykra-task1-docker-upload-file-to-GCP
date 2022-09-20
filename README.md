@@ -17,4 +17,4 @@ This repository contains files for uploading image files from the internet to Go
 5. Run the command python ```file-name.py```
 6. Finally, refresh the bucket on your GCP
 
-#Good luck!
+# Good luck!
