@@ -36,37 +36,8 @@ def upload_file(bucket_name, source_file_name, destination_blob_name):
 
 upload_file(bucket_name, source_file_name, destination_blob_name)
 
-# storage_client = storage.Client()
-# bucket = storage_client.bucket(bucket_name)
-# blob = bucket.blob(destination_blob_name)
-
-# blob.upload_from_filename(source_file_name)
-
 print(
     "File {} uploaded to {}.".format(
         source_file_name, destination_blob_name
     )
 )
-
-
-
-
-# from google.cloud import storage
-# import wget
-# import io, os
-
-# project_id = 'ace-mile-362915'
-# bucket_name = 'de-fellowship-7'
-# destination_blob_name = 'docker_upload'
-# storage_client = storage.Client.from_service_account_json('my_creds.json')
-
-# source_file_name = 'https://i.pinimg.com/564x/c2/e0/75/c2e075bf8c8c1faec0567269afbd76b4.jpg'
-
-# def upload_file(bucket_name, source_file_name, destination_blob_name):
-#     filename = wget.download(source_file_name)
-#     bucket = storage_client.get_bucket(bucket_name)
-#     blob = bucket.blob(destination_blob_name)
-#     blob.upload_from_filename(filename, content_type='image/jpg')
-#     os.remove(filename)
-
-# upload_file(bucket_name, source_file_name, destination_blob_name)
